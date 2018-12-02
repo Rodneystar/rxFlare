@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TimerEventTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2018-12-02T15:58:35" hostname="MAC-14883" time="0.038">
+<testsuite name="TimerEventTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2018-12-02T16:08:18" hostname="MAC-14883" time="0.039">
   <properties/>
-  <testcase name="given2NonOverlappingEvents_whenIsOverLappingCalled_ReturnsFalse" classname="TimerEventTest" time="0.032"/>
+  <testcase name="given2NonOverlappingEvents_whenIsOverLappingCalled_ReturnsFalse" classname="TimerEventTest" time="0.033"/>
   <testcase name="givenEventNextDay_WhenGetMinsUntilStartIsCalled_thenReturnCorrectTime" classname="TimerEventTest" time="0.004"/>
   <testcase name="whenGetRxIntervalCalled_returnsIntervalObservableOfBooleanValues" classname="TimerEventTest" time="0.001"/>
   <testcase name="givenEventOnSameDay_WhenGetMinsUntilStartIsCalled_thenReturnCorrectTime" classname="TimerEventTest" time="0.0"/>
