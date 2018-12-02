@@ -2,10 +2,18 @@ package modules;
 
 public class SwitchEvent {
 
-    String source;
+    TargetModule source;
     Boolean shouldBeOn;
 
-    public SwitchEvent(String source, boolean shouldBeOn) {
+    public Boolean getShouldBeOn() {
+        return shouldBeOn;
+    }
+
+    public TargetModule getSource() {
+        return source;
+    }
+
+    public SwitchEvent(TargetModule source, boolean shouldBeOn) {
         this.source = source; this.shouldBeOn = shouldBeOn;
     }
 }

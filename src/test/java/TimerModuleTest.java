@@ -1,21 +1,24 @@
-import com.sun.media.sound.SoftChorus;
+import io.reactivex.Observable;
 import io.reactivex.Single;
+import io.reactivex.internal.operators.observable.ObservableFlatMap;
+import io.reactivex.observers.TestObserver;
+import io.reactivex.schedulers.Schedulers;
 import io.reactivex.schedulers.TestScheduler;
+import io.reactivex.subjects.PublishSubject;
+import io.vertx.core.json.JsonObject;
 import modules.SwitchEvent;
+import modules.TimerEvent;
 import modules.TimerModule;
 import org.junit.Before;
 import org.junit.Test;
-import io.vertx.core.json.JsonObject;
 
 import java.time.Duration;
 import java.time.LocalTime;
 import java.time.temporal.ChronoUnit;
-import java.time.temporal.TemporalUnit;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class TimerModuleTest {
 
@@ -46,9 +49,41 @@ public class TimerModuleTest {
     }
 
     @Test
-    public void whenObserveCalled_returnsIntervalObservableOfSwitchEvents() {
-        timer.observe().test()
-                .assertValue(Objects::nonNull);
+    public void whenObserveCalled_returnsPublishSubjectOfSwitchEvent() {
+        assertThat(timer.observe()).isInstanceOf(ObservableFlatMap.class);
+    }
+
+    @Test
+    public void whenObserveCalled_returnsIntervalObservableOfSwitchEvents() throws InterruptedException {
+        TestObserver<Boolean> test = timer.observe().map(e -> e.getShouldBeOn()).test();
+
+        test.assertNoValues();
+    }
+
+    @Test
+    public void whenObserveCalled_returnsIntervalObservableOfSwitchEventsMANUALTEST() throws InterruptedException {
+        TestObserver<Boolean> test = timer.observe().map(e -> e.getShouldBeOn()).test();
+        timer.addTimer(new TimerEvent(LocalTime.now().plus(3, ChronoUnit.MINUTES),
+                Duration.ofMinutes(2), sched));
+
+        test.assertNoValues();
+
+        sched.advanceTimeBy(3, TimeUnit.MINUTES);
+        test.assertValues(true);
+
+        sched.advanceTimeBy(2, TimeUnit.MINUTES);
+        test.assertValues(true, false);
+
+        timer.addTimer(new TimerEvent(LocalTime.now().plus(6, ChronoUnit.MINUTES),
+                        Duration.ofMinutes(2),sched ));
+
+        test.assertValues(true, false);
+
+        sched.advanceTimeBy(2, TimeUnit.MINUTES);
+        test.assertValues(true, false, true );
+
+        sched.advanceTimeBy(2, TimeUnit.MINUTES);
+        test.assertValues(true, false, true, false );
     }
 
     @Test
@@ -57,10 +92,9 @@ public class TimerModuleTest {
         Duration duration = Duration.ofHours(2);
         timer.addTimer(start, duration);
 
-        final List<SwitchEvent> eventList = new ArrayList<>();
-        timer.observe().subscribe( e -> eventList.add())
-                timer.observe().test()
-
-
+        timer.getEvents()
+                .map( e -> e.getDuration().toMinutes())
+                .test()
+                .assertValue(120L);
     }
 }

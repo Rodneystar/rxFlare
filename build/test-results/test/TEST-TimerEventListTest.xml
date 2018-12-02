@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TimerEventListTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2018-12-02T15:58:34" hostname="MAC-14883" time="0.111">
+  <properties/>
+  <testcase name="whenGetIntervalForAllEvents_ObservableBehavesCorrectly" classname="TimerEventListTest" time="0.101"/>
+  <testcase name="givenEmptyTimerList_whenEventsAreAdded_thenGetEventsReturnsObservable" classname="TimerEventListTest" time="0.008"/>
+  <testcase name="givenEmptyTimerList_when2OverlappingEventsAreAdded_thenGetEventsReturnsObservableWithOneValue" classname="TimerEventListTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

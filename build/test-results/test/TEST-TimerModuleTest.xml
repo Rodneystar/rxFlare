@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TimerModuleTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2018-12-02T15:58:35" hostname="MAC-14883" time="0.03">
+  <properties/>
+  <testcase name="whenAddTimerCalled_getTimersReturnsObservableOfTimers" classname="TimerModuleTest" time="0.012"/>
+  <testcase name="whenTimerTarget_thenReturnsFullMaybe" classname="TimerModuleTest" time="0.011"/>
+  <testcase name="whenObserveCalled_returnsPublishSubjectOfSwitchEvent" classname="TimerModuleTest" time="0.0"/>
+  <testcase name="whenObserveCalled_returnsIntervalObservableOfSwitchEvents" classname="TimerModuleTest" time="0.001"/>
+  <testcase name="whenNotTimerTarget_thenReturnsEmptyMaybe" classname="TimerModuleTest" time="0.0"/>
+  <testcase name="whenObserveCalled_returnsIntervalObservableOfSwitchEventsMANUALTEST" classname="TimerModuleTest" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

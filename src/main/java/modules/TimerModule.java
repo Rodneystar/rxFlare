@@ -1,10 +1,7 @@
 package modules;
 
-import io.reactivex.Maybe;
-import io.reactivex.Observable;
-import io.reactivex.Scheduler;
-import io.reactivex.Single;
-import io.reactivex.schedulers.TestScheduler;
+import io.reactivex.*;
+import io.reactivex.subjects.PublishSubject;
 import io.vertx.core.json.JsonObject;
 
 import java.time.Duration;
@@ -12,24 +9,45 @@ import java.time.LocalTime;
 
 public class TimerModule implements ReceivesHeatingInstruction {
 
-    private final Scheduler scheduler;
+    private Scheduler scheduler;
+    private TimerEventList timerEvents;
+    private PublishSubject<Observable<SwitchEvent>> broadcastedEvents;
 
     public TimerModule(Scheduler sched) {
         this.scheduler = sched;
+        timerEvents = new TimerEventList();
+        broadcastedEvents = PublishSubject.create();
     }
 
     @Override
     public Maybe<JsonObject> receiveInstruction(Single<JsonObject> instruction) {
         return instruction.filter( inst -> "timer".equals(inst.getString("targetModule" )));
-//        return instruction.map( i -> i.getJsonObject("update"));
     }
 
+    private void updateBroadcastedEvents() {
+        broadcastedEvents.onNext(
+                timerEvents.getRxIntervalForAllEvents().takeUntil(broadcastedEvents));
+    }
 
     public Observable<SwitchEvent> observe() {
-        return Observable.just(new SwitchEvent("timer", true));
+        return broadcastedEvents.flatMap( e -> e);
+    }
+
+    public void addTimer(TimerEvent event) {
+        timerEvents.addEvent(event);
+        updateBroadcastedEvents();
     }
 
     public void addTimer(LocalTime startTime, Duration duration) {
+        addTimer(new TimerEvent(startTime, duration, scheduler));
+        updateBroadcastedEvents();
+    }
 
+    public Observable<TimerEvent> getEvents() {
+        return timerEvents.getAllEvents();
+    }
+
+    public void setScheduler(Scheduler sched) {
+        this.scheduler = sched;
     }
 }
