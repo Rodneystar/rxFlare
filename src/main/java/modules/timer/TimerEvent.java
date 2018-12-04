@@ -1,8 +1,10 @@
-package modules;
+package modules.timer;
 
 import io.reactivex.Observable;
 import io.reactivex.Scheduler;
 import io.reactivex.schedulers.Schedulers;
+import modules.SwitchEvent;
+import modules.TargetModule;
 
 import java.time.Duration;
 import java.time.LocalTime;

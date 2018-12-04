@@ -1,14 +1,12 @@
-import io.reactivex.Observable;
+package timerTest;
+
 import io.reactivex.Single;
 import io.reactivex.internal.operators.observable.ObservableFlatMap;
 import io.reactivex.observers.TestObserver;
-import io.reactivex.schedulers.Schedulers;
 import io.reactivex.schedulers.TestScheduler;
-import io.reactivex.subjects.PublishSubject;
 import io.vertx.core.json.JsonObject;
-import modules.SwitchEvent;
-import modules.TimerEvent;
-import modules.TimerModule;
+import modules.timer.TimerEvent;
+import modules.timer.TimerModule;
 import org.junit.Before;
 import org.junit.Test;
 

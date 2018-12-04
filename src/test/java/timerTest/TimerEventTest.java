@@ -1,15 +1,14 @@
+package timerTest;
+
 import io.reactivex.observers.TestObserver;
 import io.reactivex.schedulers.TestScheduler;
-import modules.TimerEvent;
+import modules.timer.TimerEvent;
 import org.assertj.core.data.Offset;
-import org.assertj.core.internal.bytebuddy.asm.Advice;
 import org.junit.Test;
 
-import java.awt.*;
 import java.time.Duration;
 import java.time.LocalTime;
 import java.time.temporal.ChronoUnit;
-import java.util.Timer;
 import java.util.concurrent.TimeUnit;
 
 import static org.assertj.core.api.Assertions.assertThat;

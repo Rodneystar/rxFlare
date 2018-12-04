@@ -1,13 +1,13 @@
+package timerTest;
+
 import io.reactivex.Observable;
 import io.reactivex.observers.TestObserver;
 import io.reactivex.schedulers.TestScheduler;
-import modules.SwitchEvent;
-import modules.TimerEvent;
-import modules.TimerEventList;
+import modules.timer.TimerEvent;
+import modules.timer.TimerEventList;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.sql.Time;
 import java.time.Duration;
 import java.time.LocalTime;
 import java.time.temporal.ChronoUnit;

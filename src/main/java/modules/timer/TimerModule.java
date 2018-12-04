@@ -1,8 +1,10 @@
-package modules;
+package modules.timer;
 
 import io.reactivex.*;
 import io.reactivex.subjects.PublishSubject;
 import io.vertx.core.json.JsonObject;
+import modules.ReceivesHeatingInstruction;
+import modules.SwitchEvent;
 
 import java.time.Duration;
 import java.time.LocalTime;

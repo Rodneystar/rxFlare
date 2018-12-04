@@ -9,6 +9,8 @@
     <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="rxFlareHopper_main" />
+    <orderEntry type="library" name="Gradle: org.slf4j:slf4j-simple:1.7.25" level="project" />
+    <orderEntry type="library" name="Gradle: org.slf4j:slf4j-api:1.7.25" level="project" />
     <orderEntry type="library" name="Gradle: io.vertx:vertx-rx-java2:3.5.4" level="project" />
     <orderEntry type="library" name="Gradle: io.vertx:vertx-web:3.5.4" level="project" />
     <orderEntry type="library" name="Gradle: junit:junit:4.12" level="project" />

@@ -1,6 +1,7 @@
-package modules;
+package modules.timer;
 
 import io.reactivex.Observable;
+import modules.SwitchEvent;
 
 import java.util.ArrayList;
 import java.util.List;

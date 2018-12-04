@@ -2,7 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72ab404c-87b6-457f-8bbf-4c4b081ef76d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_slf4j_api_1_7_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_slf4j_simple_1_7_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/modules/DefaultLoggingSwitchable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/modules/Switchable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/modules/TestSwitchable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ModManagerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/rxFlareHopper_main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/rxFlareHopper_main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/rxFlareHopper_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/rxFlareHopper_test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/WebController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/WebController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/modules/ModManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/modules/ModManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/modules/ReceivesHeatingInstruction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/modules/ReceivesHeatingInstruction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/modules/SwitchEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/modules/SwitchEvent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/modules/TargetModule.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/modules/TargetModule.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/modules/TimerEvent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/modules/TimerEventList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/modules/TimerModule.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/TimerEventListTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/TimerEventTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/TimerModuleTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WebController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WebController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/modules/ModManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modules/ModManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/modules/ReceivesHeatingInstruction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modules/ReceivesHeatingInstruction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/modules/TargetModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modules/TargetModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/modules/TimerEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modules/timer/TimerEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/modules/TimerEventList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modules/timer/TimerEventList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/modules/TimerModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modules/timer/TimerModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TimerEventListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/timerTest/TimerEventListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TimerEventTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/timerTest/TimerEventTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TimerModuleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/timerTest/TimerModuleTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -55,33 +88,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TimerModule.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/modules/TimerModule.java">
+      <file leaf-file-name="TestSwitchable.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/modules/TestSwitchable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="32" column="50" selection-start-line="32" selection-start-column="50" selection-end-line="32" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TimerEventList.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/modules/TimerEventList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="17" column="49" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
+            <state relative-caret-position="255">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#477#478#0" expanded="true" />
+                <element signature="e#318#319#0" expanded="true" />
+                <element signature="e#353#354#0" expanded="true" />
+                <element signature="e#412#413#0" expanded="true" />
+                <element signature="e#448#449#0" expanded="true" />
+                <element signature="e#505#506#0" expanded="true" />
+                <element signature="e#542#543#0" expanded="true" />
+                <element signature="e#565#566#0" expanded="true" />
+                <element signature="e#601#602#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TimerEvent.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/modules/TimerEvent.java">
+      <file leaf-file-name="ModManagerTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ModManagerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            <state relative-caret-position="259">
+              <caret line="34" column="47" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -89,78 +119,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TimerModuleTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/TimerModuleTest.java">
+      <file leaf-file-name="ModManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/modules/ModManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="870">
-              <caret line="78" selection-start-line="78" selection-end-line="78" />
+            <state relative-caret-position="42">
+              <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1543766249000" expanded="true" signature="1671:1909" ph="..." />
+                <element signature="e#640#641#0" expanded="true" />
+                <element signature="e#691#692#0" expanded="true" />
+                <element signature="e#771#772#0" expanded="true" />
+                <element signature="e#817#818#0" expanded="true" />
+                <element signature="e#1695#1696#0" expanded="true" />
+                <element signature="e#1763#1764#0" expanded="true" />
+                <element signature="class#OnMod#0;class#ModManager#0" />
+                <element signature="e#2017#2018#0" expanded="true" />
+                <element signature="e#2052#2053#0" expanded="true" />
+                <element signature="e#2237#2238#0" expanded="true" />
+                <element signature="e#2324#2325#0" expanded="true" />
+                <element signature="class#OnMod#1;class#ModManager#0" />
+                <element signature="e#2453#2454#0" expanded="true" />
+                <element signature="e#2497#2498#0" expanded="true" />
+                <element signature="e#2613#2614#0" expanded="true" />
+                <element signature="e#2702#2703#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TimerEventTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/TimerEventTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="26" column="77" selection-start-line="26" selection-start-column="77" selection-end-line="26" selection-end-column="77" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestScheduler.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.1.9/890fc9ef77d78ac270f322b024c0e660a8f57ea0/rxjava-2.1.9-sources.jar!/io/reactivex/schedulers/TestScheduler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="66" column="16" selection-start-line="66" selection-start-column="16" selection-end-line="66" selection-end-column="16" />
-              <folding>
-                <element signature="e#2353#2354#0" expanded="true" />
-                <element signature="e#2416#2417#0" expanded="true" />
-                <element signature="e#3482#3483#0" expanded="true" />
-                <element signature="e#3518#3519#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="6" selection-start-column="6" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LocalTime.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/time/LocalTime.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4650">
-              <caret line="403" column="28" selection-start-line="403" selection-start-column="28" selection-end-line="403" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Observable.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.1.9/890fc9ef77d78ac270f322b024c0e660a8f57ea0/rxjava-2.1.9-sources.jar!/io/reactivex/Observable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209595">
-              <caret line="14082" column="33" selection-start-line="14082" selection-start-column="33" selection-end-line="14082" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -170,8 +151,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -179,6 +160,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>observe</find>
+      <find>selfTime</find>
+      <find>selfType</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -366,9 +349,9 @@
     <option name="modificationStamps">
       <map>
         <entry key="$USER_HOME$/.gradle/gradle.properties" value="1645988956" />
-        <entry key="$PROJECT_DIR$" value="6174856000000" />
+        <entry key="$PROJECT_DIR$" value="6174923639000" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
-        <entry key="$PROJECT_DIR$/build.gradle" value="1213714500" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="4009507158" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="2585518924" />
         <entry key="$PROJECT_DIR$/settings.gradle" value="126842644" />
       </map>
@@ -563,9 +546,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/modules/ReceivesHeatingInstruction.java" />
-        <option value="$PROJECT_DIR$/src/main/java/modules/ModManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/modules/TargetModule.java" />
         <option value="$PROJECT_DIR$/src/main/java/modules/HeatInstruction.java" />
         <option value="$PROJECT_DIR$/src/main/java/Instructions/HeatInstruction.java" />
         <option value="$PROJECT_DIR$/src/main/java/Instructions/TimerInstruction.java" />
@@ -580,8 +560,16 @@
         <option value="$PROJECT_DIR$/src/main/java/modules/TimerModule.java" />
         <option value="$PROJECT_DIR$/src/test/java/TimerModuleTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/TimerEventTest.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/main/java/modules/ReceivesHeatingInstruction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/modules/Switchable.java" />
+        <option value="$PROJECT_DIR$/src/main/java/modules/TargetModule.java" />
+        <option value="$PROJECT_DIR$/src/main/java/modules/timer/TestSwitchable.java" />
+        <option value="$PROJECT_DIR$/src/main/java/modules/DefaultLoggingSwitchable.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/modules/TestSwitchable.java" />
+        <option value="$PROJECT_DIR$/src/main/java/modules/ModManager.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ModManagerTest.java" />
       </list>
     </option>
   </component>
@@ -687,6 +675,23 @@
               <item name="rxFlareHopper" type="b2602c69:ProjectViewProjectNode" />
               <item name="rxFlare" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rxFlareHopper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rxFlare" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="timer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rxFlareHopper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rxFlare" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
@@ -695,6 +700,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rxFlareHopper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rxFlare" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="timerTest" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -705,6 +718,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15234375" />
@@ -755,12 +769,29 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="TimerEventListTest.whenGetIntervalForAllEvents_ObservableBehavesCorrectly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ModManagerTest.givenModManagerCreatedWithSwitchable_thenOffOnSwitchableIsCalled" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rxFlareHopper_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TimerEventListTest" />
+      <option name="MAIN_CLASS_NAME" value="ModManagerTest" />
+      <option name="METHOD_NAME" value="givenModManagerCreatedWithSwitchable_thenOffOnSwitchableIsCalled" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="TimerEventListTest.whenGetIntervalForAllEvents_ObservableBehavesCorrectly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rxFlareHopper_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="timerTest" />
+      <option name="MAIN_CLASS_NAME" value="timerTest.TimerEventListTest" />
       <option name="METHOD_NAME" value="whenGetIntervalForAllEvents_ObservableBehavesCorrectly" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -776,26 +807,9 @@
       <module name="rxFlareHopper_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TimerEventTest" />
+      <option name="PACKAGE_NAME" value="timerTest" />
+      <option name="MAIN_CLASS_NAME" value="timerTest.TimerEventTest" />
       <option name="METHOD_NAME" value="whenGetRxIntervalCalled_returnsIntervalObservableOfBooleanValues" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="TimerModuleTest.whenObserveCalled_returnsIntervalObservableOfSwitchEvents" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rxFlareHopper_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TimerModuleTest" />
-      <option name="METHOD_NAME" value="whenObserveCalled_returnsIntervalObservableOfSwitchEvents" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -810,8 +824,8 @@
       <module name="rxFlareHopper_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TimerModuleTest" />
+      <option name="PACKAGE_NAME" value="timerTest" />
+      <option name="MAIN_CLASS_NAME" value="timerTest.TimerModuleTest" />
       <option name="METHOD_NAME" value="whenObserveCalled_returnsIntervalObservableOfSwitchEventsMANUALTEST" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -862,19 +876,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.TimerModuleTest.whenObserveCalled_returnsIntervalObservableOfSwitchEvents" />
       <item itemvalue="JUnit.TimerModuleTest.whenObserveCalled_returnsIntervalObservableOfSwitchEventsMANUALTEST" />
       <item itemvalue="JUnit.TimerEventListTest.whenGetIntervalForAllEvents_ObservableBehavesCorrectly" />
       <item itemvalue="JUnit.All in rxFlareHopper_test" />
       <item itemvalue="JUnit.TimerEventTest.whenGetRxIntervalCalled_returnsIntervalObservableOfBooleanValues" />
+      <item itemvalue="JUnit.ModManagerTest.givenModManagerCreatedWithSwitchable_thenOffOnSwitchableIsCalled" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.All in rxFlareHopper_test" />
+        <item itemvalue="JUnit.ModManagerTest.givenModManagerCreatedWithSwitchable_thenOffOnSwitchableIsCalled" />
         <item itemvalue="JUnit.TimerEventTest.whenGetRxIntervalCalled_returnsIntervalObservableOfBooleanValues" />
         <item itemvalue="JUnit.TimerModuleTest.whenObserveCalled_returnsIntervalObservableOfSwitchEventsMANUALTEST" />
         <item itemvalue="JUnit.TimerEventListTest.whenGetIntervalForAllEvents_ObservableBehavesCorrectly" />
-        <item itemvalue="JUnit.TimerModuleTest.whenObserveCalled_returnsIntervalObservableOfSwitchEvents" />
       </list>
     </recent_temporary>
   </component>
@@ -889,44 +903,44 @@
       <option name="presentableId" value="Default" />
       <updated>1542469435920</updated>
       <workItem from="1543697410902" duration="30553000" />
-      <workItem from="1543766601308" duration="1077000" />
+      <workItem from="1543766601308" duration="13145000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TimerModuleTest_whenObserveCalled_returnsIntervalObservableOfSwitchEventsMANUALTEST - 2018.12.02 at 15h 42m 38s.xml">
-      <configuration name="TimerModuleTest.whenObserveCalled_returnsIntervalObservableOfSwitchEventsMANUALTEST" configurationId="JUnit" />
+    <history-entry file="ModManagerTest_givenModManagerCreatedWithSwitchable_thenOffOnSwitchableIsCalled - 2018.12.03 at 19h 56m 45s.xml">
+      <configuration name="ModManagerTest.givenModManagerCreatedWithSwitchable_thenOffOnSwitchableIsCalled" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TimerModuleTest_whenObserveCalled_returnsIntervalObservableOfSwitchEventsMANUALTEST - 2018.12.02 at 15h 46m 00s.xml">
-      <configuration name="TimerModuleTest.whenObserveCalled_returnsIntervalObservableOfSwitchEventsMANUALTEST" configurationId="JUnit" />
+    <history-entry file="ModManagerTest_givenModManagerCreatedWithSwitchable_thenOffOnSwitchableIsCalled - 2018.12.03 at 19h 56m 49s.xml">
+      <configuration name="ModManagerTest.givenModManagerCreatedWithSwitchable_thenOffOnSwitchableIsCalled" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TimerModuleTest_whenObserveCalled_returnsIntervalObservableOfSwitchEventsMANUALTEST - 2018.12.02 at 15h 46m 35s.xml">
-      <configuration name="TimerModuleTest.whenObserveCalled_returnsIntervalObservableOfSwitchEventsMANUALTEST" configurationId="JUnit" />
+    <history-entry file="ModManagerTest_givenModManagerCreatedWithSwitchable_thenOffOnSwitchableIsCalled - 2018.12.03 at 19h 59m 01s.xml">
+      <configuration name="ModManagerTest.givenModManagerCreatedWithSwitchable_thenOffOnSwitchableIsCalled" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TimerModuleTest_whenObserveCalled_returnsIntervalObservableOfSwitchEventsMANUALTEST - 2018.12.02 at 15h 47m 22s.xml">
-      <configuration name="TimerModuleTest.whenObserveCalled_returnsIntervalObservableOfSwitchEventsMANUALTEST" configurationId="JUnit" />
+    <history-entry file="ModManagerTest_givenModManagerCreatedWithSwitchable_thenOffOnSwitchableIsCalled - 2018.12.03 at 19h 59m 40s.xml">
+      <configuration name="ModManagerTest.givenModManagerCreatedWithSwitchable_thenOffOnSwitchableIsCalled" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TimerModuleTest_whenObserveCalled_returnsIntervalObservableOfSwitchEventsMANUALTEST - 2018.12.02 at 15h 48m 21s.xml">
-      <configuration name="TimerModuleTest.whenObserveCalled_returnsIntervalObservableOfSwitchEventsMANUALTEST" configurationId="JUnit" />
+    <history-entry file="ModManagerTest_givenModManagerCreatedWithSwitchable_thenOffOnSwitchableIsCalled - 2018.12.03 at 20h 00m 47s.xml">
+      <configuration name="ModManagerTest.givenModManagerCreatedWithSwitchable_thenOffOnSwitchableIsCalled" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TimerModuleTest_whenObserveCalled_returnsIntervalObservableOfSwitchEventsMANUALTEST - 2018.12.02 at 15h 48m 42s.xml">
-      <configuration name="TimerModuleTest.whenObserveCalled_returnsIntervalObservableOfSwitchEventsMANUALTEST" configurationId="JUnit" />
+    <history-entry file="ModManagerTest_givenModManagerCreatedWithSwitchable_thenOffOnSwitchableIsCalled - 2018.12.03 at 20h 00m 52s.xml">
+      <configuration name="ModManagerTest.givenModManagerCreatedWithSwitchable_thenOffOnSwitchableIsCalled" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_rxFlareHopper_test - 2018.12.02 at 15h 56m 41s.xml">
-      <configuration name="All in rxFlareHopper_test" configurationId="JUnit" />
+    <history-entry file="ModManagerTest_givenModManagerCreatedWithSwitchable_thenOffOnSwitchableIsCalled - 2018.12.03 at 20h 06m 46s.xml">
+      <configuration name="ModManagerTest.givenModManagerCreatedWithSwitchable_thenOffOnSwitchableIsCalled" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TimerEventTest_whenGetRxIntervalCalled_returnsIntervalObservableOfBooleanValues - 2018.12.02 at 15h 57m 33s.xml">
-      <configuration name="TimerEventTest.whenGetRxIntervalCalled_returnsIntervalObservableOfBooleanValues" configurationId="JUnit" />
+    <history-entry file="ModManagerTest_givenModManagerCreatedWithSwitchable_thenOffOnSwitchableIsCalled - 2018.12.03 at 20h 08m 23s.xml">
+      <configuration name="ModManagerTest.givenModManagerCreatedWithSwitchable_thenOffOnSwitchableIsCalled" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_rxFlareHopper_test - 2018.12.02 at 15h 57m 42s.xml">
-      <configuration name="All in rxFlareHopper_test" configurationId="JUnit" />
+    <history-entry file="ModManagerTest_givenModManagerCreatedWithSwitchable_thenOffOnSwitchableIsCalled - 2018.12.03 at 20h 08m 35s.xml">
+      <configuration name="ModManagerTest.givenModManagerCreatedWithSwitchable_thenOffOnSwitchableIsCalled" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TimerModuleTest_whenObserveCalled_returnsIntervalObservableOfSwitchEventsMANUALTEST - 2018.12.02 at 16h 00m 00s.xml">
-      <configuration name="TimerModuleTest.whenObserveCalled_returnsIntervalObservableOfSwitchEventsMANUALTEST" configurationId="JUnit" />
+    <history-entry file="ModManagerTest_givenModManagerCreatedWithSwitchable_thenOffOnSwitchableIsCalled - 2018.12.03 at 20h 08m 55s.xml">
+      <configuration name="ModManagerTest.givenModManagerCreatedWithSwitchable_thenOffOnSwitchableIsCalled" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31630000" />
+    <option name="totallyTimeSpent" value="43698000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="826" extended-state="0" />
@@ -947,18 +961,18 @@
       <window_info id="UI Designer" order="2" />
       <window_info anchor="bottom" id="Debug" order="11" weight="0.39917696" />
       <window_info anchor="bottom" id="TODO" order="14" />
+      <window_info anchor="bottom" id="Messages" order="4" sideWeight="0.483023" weight="0.32921812" />
       <window_info anchor="right" id="Palette&#9;" order="2" />
       <window_info id="Image Layers" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Run" order="10" sideWeight="0.55864197" weight="0.41563785" />
+      <window_info active="true" anchor="bottom" id="Run" order="10" sideWeight="0.55864197" visible="true" weight="0.41563785" />
       <window_info anchor="bottom" id="Version Control" order="6" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.5287549" visible="true" weight="0.5418381" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.5287549" weight="0.34293553" />
       <window_info content_ui="combo" id="Project" order="4" visible="true" weight="0.18168813" />
       <window_info anchor="bottom" id="sbt-shell-toolwindow" order="0" />
       <window_info anchor="right" id="Gradle" order="6" visible="true" weight="0.14592275" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="4" sideWeight="0.483023" weight="0.32921812" />
       <window_info anchor="right" id="Commander" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Find" order="9" />
       <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
@@ -978,27 +992,30 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/modules/TimerModule.java</url>
-          <line>23</line>
-          <properties>
-            <option name="lambda-ordinal" value="-1" />
-          </properties>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/TimerModuleTest.java</url>
-          <line>64</line>
-          <properties>
-            <option name="lambda-ordinal" value="-1" />
-          </properties>
-          <option name="timeStamp" value="17" />
+          <url>file://$PROJECT_DIR$/src/main/java/modules/TestSwitchable.java</url>
+          <line>17</line>
+          <properties />
+          <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="18" />
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="29" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>e</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>s.getSource()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>first.isOverMidnight()</expression-string>
         <language-id>JAVA</language-id>
@@ -1012,85 +1029,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/groovy/TimerModuleTest" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/modules/TimerModule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/WebController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="48" lean-forward="true" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/modules/ReceivesHeatingInstruction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/java.base/java/lang/Module.java" />
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.vertx/vertx-web/3.5.4/92d582ddec7328f6f7a7071d5c9a10c3514d41a0/vertx-web-3.5.4-sources.jar!/io/vertx/reactivex/ext/web/Route.java" />
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.vertx/vertx-web/3.5.4/92d582ddec7328f6f7a7071d5c9a10c3514d41a0/vertx-web-3.5.4-sources.jar!/io/vertx/reactivex/ext/web/RoutingContext.java" />
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.1.9/890fc9ef77d78ac270f322b024c0e660a8f57ea0/rxjava-2.1.9-sources.jar!/io/reactivex/Single.java" />
-    <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/java.base/java/text/MessageFormat.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/modules/ModManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="49" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.vertx/vertx-web/3.5.4/92d582ddec7328f6f7a7071d5c9a10c3514d41a0/vertx-web-3.5.4-sources.jar!/io/vertx/reactivex/ext/web/Router.java" />
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.vertx/vertx-core/3.5.4/7aebf47c0b9f35b297276eb006b91151a2f756e5/vertx-core-3.5.4-sources.jar!/io/vertx/core/logging/Logger.java" />
-    <entry file="file://$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/base-services/org/gradle/api/JavaVersion.java" />
-    <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/java.base/java/text/MessageFormat.java" />
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.vertx/vertx-web/3.5.4/92d582ddec7328f6f7a7071d5c9a10c3514d41a0/vertx-web-3.5.4-sources.jar!/io/vertx/reactivex/ext/web/RoutingContext.java" />
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.vertx/vertx-web/3.5.4/92d582ddec7328f6f7a7071d5c9a10c3514d41a0/vertx-web-3.5.4-sources.jar!/io/vertx/reactivex/ext/web/Route.java" />
-    <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/java.base/java/lang/Module.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/modules/ReceivesHeatingInstruction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/modules/ModManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="37" lean-forward="true" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Instructions/HeatInstruction.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Instructions/TimerInstruction.java" />
-    <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/java.base/java/util/HashMap.java" />
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/Before.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="36" column="18" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/BeforeClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="35" column="18" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.vertx/vertx-core/3.5.4/7aebf47c0b9f35b297276eb006b91151a2f756e5/vertx-core-3.5.4-sources.jar!/io/vertx/core/json/JsonObject.java" />
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.1.9/890fc9ef77d78ac270f322b024c0e660a8f57ea0/rxjava-2.1.9-sources.jar!/io/reactivex/observers/BaseTestConsumer.java" />
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.1.9/890fc9ef77d78ac270f322b024c0e660a8f57ea0/rxjava-2.1.9-sources.jar!/io/reactivex/Single.java" />
@@ -1110,20 +1048,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="223">
           <caret line="196" column="28" selection-start-line="196" selection-start-column="28" selection-end-line="196" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/modules/TargetModule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/modules/SwitchEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -1148,62 +1072,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TimerEventListTest.java">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/modules/TimerEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/modules/TimerEventList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="17" column="49" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#477#478#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/modules/TimerModule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="32" column="50" selection-start-line="32" selection-start-column="50" selection-end-line="32" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.1.9/890fc9ef77d78ac270f322b024c0e660a8f57ea0/rxjava-2.1.9-sources.jar!/io/reactivex/Observable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209595">
-          <caret line="14082" column="33" selection-start-line="14082" selection-start-column="33" selection-end-line="14082" selection-end-column="33" />
+        <state>
+          <caret column="6" selection-start-column="6" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/time/LocalTime.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4650">
+        <state relative-caret-position="15">
           <caret line="403" column="28" selection-start-line="403" selection-start-column="28" selection-end-line="403" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.1.9/890fc9ef77d78ac270f322b024c0e660a8f57ea0/rxjava-2.1.9-sources.jar!/io/reactivex/schedulers/TestScheduler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="66" column="16" selection-start-line="66" selection-start-column="16" selection-end-line="66" selection-end-column="16" />
+        <state relative-caret-position="216">
+          <caret line="77" column="7" lean-forward="true" selection-start-line="77" selection-start-column="7" selection-end-line="77" selection-end-column="7" />
           <folding>
             <element signature="e#2353#2354#0" expanded="true" />
             <element signature="e#2416#2417#0" expanded="true" />
@@ -1213,38 +1099,323 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TimerModuleTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/modules/timer/TimerEvent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="870">
-          <caret line="78" selection-start-line="78" selection-end-line="78" />
+        <state relative-caret-position="144">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1543766249000" expanded="true" signature="1671:1909" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TimerEventTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/modules/timer/TimerEventList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="26" column="77" selection-start-line="26" selection-start-column="77" selection-end-line="26" selection-end-column="77" />
+        <state relative-caret-position="120">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#401#402#0" expanded="true" />
+            <element signature="e#477#478#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/timerTest/TimerEventTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/modules/ReceivesHeatingInstruction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="10" column="38" lean-forward="true" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/modules/SwitchEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/modules/TargetModule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="7" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/modules/timer/TimerModule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-139">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/timerTest/TimerModuleTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding>
+            <marker date="1543825058000" expanded="true" signature="1555:1793" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/timerTest/TimerEventListTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/lang/Class.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="3366" column="13" selection-start-line="3366" selection-start-column="13" selection-end-line="3366" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.assertj/assertj-core/3.11.1/55362d8f04018b1140c5a370057bf8cd4a63c3de/assertj-core-3.11.1-sources.jar!/org/assertj/core/api/AssertionsForInterfaceTypes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5579">
+          <caret line="419" column="28" lean-forward="true" selection-start-line="419" selection-start-column="28" selection-end-line="419" selection-end-column="28" />
+          <folding>
+            <element signature="e#19239#19240#0" expanded="true" />
+            <element signature="e#19286#19287#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.assertj/assertj-core/3.11.1/55362d8f04018b1140c5a370057bf8cd4a63c3de/assertj-core-3.11.1-sources.jar!/org/assertj/core/api/AbstractAssert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="823">
+          <caret line="115" column="46" lean-forward="true" selection-start-line="115" selection-start-column="46" selection-end-line="115" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.assertj/assertj-core/3.11.1/55362d8f04018b1140c5a370057bf8cd4a63c3de/assertj-core-3.11.1-sources.jar!/org/assertj/core/api/AbstractPredicateLikeAssert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="42" column="8" lean-forward="true" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.assertj/assertj-core/3.11.1/55362d8f04018b1140c5a370057bf8cd4a63c3de/assertj-core-3.11.1-sources.jar!/org/assertj/core/api/IntPredicateAssert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-13">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#1040#1041#0" expanded="true" />
+            <element signature="e#1110#1111#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.assertj/assertj-core/3.11.1/55362d8f04018b1140c5a370057bf8cd4a63c3de/assertj-core-3.11.1-sources.jar!/org/assertj/core/api/Assertions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="163" column="45" lean-forward="true" selection-start-line="163" selection-start-column="45" selection-end-line="163" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.25/962153db4a9ea71b79d047dfd1b2a0d80d8f4739/slf4j-api-1.7.25-sources.jar!/org/slf4j/LoggerFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-262">
+          <caret line="63" column="19" selection-start-line="63" selection-start-column="19" selection-end-line="63" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+        <state relative-caret-position="236">
+          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/src/main/java/modules/Switchable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="6" selection-start-column="6" selection-end-column="6" />
+        <state relative-caret-position="75">
+          <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runners/ParentRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="341" lean-forward="true" selection-start-line="341" selection-end-line="341" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runners/model/FrameworkMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+          <folding>
+            <element signature="e#1464#1658#0" expanded="true" />
+            <element signature="e#1657#1658#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/internal/runners/statements/RunBefores.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.1.9/890fc9ef77d78ac270f322b024c0e660a8f57ea0/rxjava-2.1.9-sources.jar!/io/reactivex/functions/Predicate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/modules/DefaultLoggingSwitchable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="56" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#248#249#0" expanded="true" />
+            <element signature="e#279#280#0" expanded="true" />
+            <element signature="e#349#350#0" expanded="true" />
+            <element signature="e#374#375#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.1.9/890fc9ef77d78ac270f322b024c0e660a8f57ea0/rxjava-2.1.9-sources.jar!/io/reactivex/internal/operators/observable/ObservableFromArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.1.9/890fc9ef77d78ac270f322b024c0e660a8f57ea0/rxjava-2.1.9-sources.jar!/io/reactivex/internal/operators/observable/ObservableFlatMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.1.9/890fc9ef77d78ac270f322b024c0e660a8f57ea0/rxjava-2.1.9-sources.jar!/io/reactivex/internal/operators/observable/ObservableFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="e#1181#1182#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.1.9/890fc9ef77d78ac270f322b024c0e660a8f57ea0/rxjava-2.1.9-sources.jar!/io/reactivex/Observable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="11206" selection-start-line="11206" selection-end-line="11206" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.1.9/890fc9ef77d78ac270f322b024c0e660a8f57ea0/rxjava-2.1.9-sources.jar!/io/reactivex/Scheduler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="467" selection-start-line="467" selection-end-line="467" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.1.9/890fc9ef77d78ac270f322b024c0e660a8f57ea0/rxjava-2.1.9-sources.jar!/io/reactivex/internal/schedulers/ScheduledRunnable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.1.9/890fc9ef77d78ac270f322b024c0e660a8f57ea0/rxjava-2.1.9-sources.jar!/io/reactivex/internal/operators/observable/ObservableSubscribeOn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="96" selection-start-line="96" selection-end-line="96" />
+          <folding>
+            <element signature="e#2008#2009#0" expanded="true" />
+            <element signature="e#2048#2049#0" expanded="true" />
+            <element signature="e#2876#2877#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.1.9/890fc9ef77d78ac270f322b024c0e660a8f57ea0/rxjava-2.1.9-sources.jar!/io/reactivex/internal/observers/LambdaObserver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="69" selection-start-line="69" selection-end-line="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/modules/TestSwitchable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#318#319#0" expanded="true" />
+            <element signature="e#353#354#0" expanded="true" />
+            <element signature="e#412#413#0" expanded="true" />
+            <element signature="e#448#449#0" expanded="true" />
+            <element signature="e#505#506#0" expanded="true" />
+            <element signature="e#542#543#0" expanded="true" />
+            <element signature="e#565#566#0" expanded="true" />
+            <element signature="e#601#602#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/modules/ModManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+          <folding>
+            <element signature="e#640#641#0" expanded="true" />
+            <element signature="e#691#692#0" expanded="true" />
+            <element signature="e#771#772#0" expanded="true" />
+            <element signature="e#817#818#0" expanded="true" />
+            <element signature="e#1695#1696#0" expanded="true" />
+            <element signature="e#1763#1764#0" expanded="true" />
+            <element signature="class#OnMod#0;class#ModManager#0" />
+            <element signature="e#2017#2018#0" expanded="true" />
+            <element signature="e#2052#2053#0" expanded="true" />
+            <element signature="e#2237#2238#0" expanded="true" />
+            <element signature="e#2324#2325#0" expanded="true" />
+            <element signature="class#OnMod#1;class#ModManager#0" />
+            <element signature="e#2453#2454#0" expanded="true" />
+            <element signature="e#2497#2498#0" expanded="true" />
+            <element signature="e#2613#2614#0" expanded="true" />
+            <element signature="e#2702#2703#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ModManagerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="34" column="47" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
