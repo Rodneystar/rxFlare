@@ -3,13 +3,13 @@ package modules.timer;
 import io.reactivex.*;
 import io.reactivex.subjects.PublishSubject;
 import io.vertx.core.json.JsonObject;
-import modules.ReceivesHeatingInstruction;
 import modules.SwitchEvent;
 
 import java.time.Duration;
 import java.time.LocalTime;
+import java.util.concurrent.TimeUnit;
 
-public class TimerModule implements ReceivesHeatingInstruction {
+public class TimerModule {
 
     private Scheduler scheduler;
     private TimerEventList timerEvents;
@@ -21,18 +21,13 @@ public class TimerModule implements ReceivesHeatingInstruction {
         broadcastedEvents = PublishSubject.create();
     }
 
-    @Override
-    public Maybe<JsonObject> receiveInstruction(Single<JsonObject> instruction) {
-        return instruction.filter( inst -> "timer".equals(inst.getString("targetModule" )));
-    }
-
     private void updateBroadcastedEvents() {
         broadcastedEvents.onNext(
                 timerEvents.getRxIntervalForAllEvents().takeUntil(broadcastedEvents));
     }
 
     public Observable<SwitchEvent> observe() {
-        return broadcastedEvents.flatMap( e -> e);
+        return broadcastedEvents.flatMap(e -> e);
     }
 
     public void addTimer(TimerEvent event) {
@@ -42,7 +37,6 @@ public class TimerModule implements ReceivesHeatingInstruction {
 
     public void addTimer(LocalTime startTime, Duration duration) {
         addTimer(new TimerEvent(startTime, duration, scheduler));
-        updateBroadcastedEvents();
     }
 
     public Observable<TimerEvent> getEvents() {

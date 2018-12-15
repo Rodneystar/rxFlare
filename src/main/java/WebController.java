@@ -6,7 +6,6 @@ import io.vertx.core.logging.LoggerFactory;
 import io.vertx.reactivex.core.Vertx;
 import io.vertx.reactivex.ext.web.Router;
 import io.vertx.reactivex.ext.web.handler.BodyHandler;
-import modules.ModManager;
 import modules.timer.TimerModule;
 
 import static java.text.MessageFormat.format;
@@ -16,11 +15,10 @@ public class WebController {
     Logger logger = LoggerFactory.getLogger(WebController.class);
     Vertx vertx = Vertx.vertx();
     Router router = Router.router(vertx);
-    private ModManager modManager;
+    HeatService heatService;
 
-    public WebController() {
-        modManager = new ModManager();
-        modManager.addModule(new TimerModule(Schedulers.computation()));
+    public WebController(HeatService heatService) {
+        this.heatService = heatService;
     }
 
 
@@ -28,14 +26,14 @@ public class WebController {
 
         router.route().handler(BodyHandler.create());
         router
-                .route("/")
+                .route("/mode")
                 .method(HttpMethod.PUT)
                 .handler(context ->
                         Single
                                 .just(context)
                                 .doOnEvent((c, err) -> logger.info(format("{0}", context.getBodyAsJson())))
                                 .flatMap(cText ->
-                                    modManager.order(cText.getBodyAsJson()))
+                                    heatService.setMode(cText.getBodyAsJson()))
                                 .subscribe(
                                         r -> context.response().end( r.encodePrettily() ),
                                         e -> context.response().end( e.getMessage() )
