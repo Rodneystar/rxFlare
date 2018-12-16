@@ -33,19 +33,6 @@ public class TimerModuleTest {
         timer = new TimerModule(sched);
     }
 
-
-    @Test
-    public void whenTimerTarget_thenReturnsFullMaybe() {
-        timer.receiveInstruction(instruction).test()
-                    .assertValue(Objects::nonNull);
-    }
-    @Test
-    public void whenNotTimerTarget_thenReturnsEmptyMaybe() {
-        instructionJson.put("targetModule", "notTimer");
-        timer.receiveInstruction(instruction).test()
-                .assertNoValues();
-    }
-
     @Test
     public void whenObserveCalled_returnsPublishSubjectOfSwitchEvent() {
         assertThat(timer.observe()).isInstanceOf(ObservableFlatMap.class);

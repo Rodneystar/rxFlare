@@ -2,18 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72ab404c-87b6-457f-8bbf-4c4b081ef76d" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/HeatService.java" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/rxFlareHopper_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/rxFlareHopper_main.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/rxFlareHopper_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/rxFlareHopper_test.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/HeatServiceTest.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WebController.java" afterPath="$PROJECT_DIR$/src/main/java/WebController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/modules/ModManager.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/modules/ReceivesHeatingInstruction.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/modules/TargetModule.java" afterPath="$PROJECT_DIR$/src/main/java/modules/TargetModule.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/modules/timer/TimerModule.java" afterPath="$PROJECT_DIR$/src/main/java/modules/timer/TimerModule.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ModManagerTest.java" afterPath="$PROJECT_DIR$/src/test/java/ModManagerTest.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HeatService.java" afterPath="$PROJECT_DIR$/src/main/java/HeatService.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" afterPath="$PROJECT_DIR$/src/main/java/Main.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ModManagerTest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/timerTest/TimerModuleTest.java" afterPath="$PROJECT_DIR$/src/test/java/timerTest/TimerModuleTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -69,18 +63,18 @@
       <file leaf-file-name="TestSwitchable.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/modules/TestSwitchable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
+            <state relative-caret-position="255">
               <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ModManagerTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ModManagerTest.java">
+      <file leaf-file-name="HeatServiceTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/HeatServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="36" column="28" lean-forward="false" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
+            <state relative-caret-position="342">
+              <caret line="43" column="38" lean-forward="false" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -88,60 +82,39 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TimerModule.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/modules/timer/TimerModule.java">
+      <file leaf-file-name="String.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/src.zip!/java/lang/String.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="17" column="41" lean-forward="true" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+            <state relative-caret-position="15">
+              <caret line="111" column="71" lean-forward="false" selection-start-line="111" selection-start-column="71" selection-end-line="111" selection-end-column="71" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HeatService.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/HeatService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="267">
+              <caret line="29" column="66" lean-forward="true" selection-start-line="29" selection-start-column="66" selection-end-line="29" selection-end-column="66" />
               <folding>
-                <element signature="e#822#823#0" expanded="true" />
-                <element signature="e#878#879#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#944#945#0" expanded="true" />
+                <element signature="e#971#972#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WebController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="WebController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/WebController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="457">
-              <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+            <state relative-caret-position="180">
+              <caret line="28" column="31" lean-forward="true" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
               <folding>
                 <element signature="e#658#659#0" expanded="true" />
                 <element signature="e#704#705#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HeatService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/HeatService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TimerEvent.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/modules/timer/TimerEvent.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="24" column="35" lean-forward="false" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="48" lean-forward="false" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -351,7 +324,7 @@
         <entry key="$USER_HOME$/.gradle/gradle.properties" value="1645988956" />
         <entry key="$PROJECT_DIR$" value="6152657675613" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
-        <entry key="$PROJECT_DIR$/build.gradle" value="454910469" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="4009507158" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="2585518924" />
         <entry key="$PROJECT_DIR$/settings.gradle" value="126842644" />
       </map>
@@ -545,7 +518,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/modules/HeatInstruction.java" />
         <option value="$PROJECT_DIR$/src/main/java/Instructions/HeatInstruction.java" />
         <option value="$PROJECT_DIR$/src/main/java/Instructions/TimerInstruction.java" />
@@ -571,8 +543,11 @@
         <option value="$PROJECT_DIR$/src/main/java/modules/ModManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/modules/timer/TimerEvent.java" />
         <option value="$PROJECT_DIR$/src/main/java/modules/timer/TimerModule.java" />
-        <option value="$PROJECT_DIR$/src/main/java/HeatService.java" />
         <option value="$PROJECT_DIR$/src/main/java/WebController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
+        <option value="$PROJECT_DIR$/src/test/java/timerTest/TimerModuleTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/HeatServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/HeatService.java" />
       </list>
     </option>
   </component>
@@ -586,8 +561,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="286" />
-    <option name="y" value="35" />
+    <option name="x" value="213" />
+    <option name="y" value="13" />
     <option name="width" value="1440" />
     <option name="height" value="1044" />
   </component>
@@ -657,10 +632,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -727,6 +700,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -759,7 +734,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ModManagerTest.givenModManagerCreatedWithSwitchable_thenOffOnSwitchableIsCalled">
+  <component name="RunManager" selected="JUnit.HeatServiceTest.whenSetModeCalledWithOn_thenJsonObjectWithCorrectModeReturned">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <option name="WIDTH" value="0" />
@@ -780,15 +755,55 @@
       <module name="" />
       <envs />
     </configuration>
-    <configuration name="All in rxFlareHopper_test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HeatServiceTest.whenSetModeCalledWithInvalidMode_thenModeIsUnchanged" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="rxFlareHopper_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="package" />
+      <option name="MAIN_CLASS_NAME" value="HeatServiceTest" />
+      <option name="METHOD_NAME" value="whenSetModeCalledWithInvalidMode_thenModeIsUnchanged" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="HeatServiceTest.whenSetModeCalledWithOn_thenJsonObjectWithCorrectModeReturned" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="rxFlareHopper_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HeatServiceTest" />
+      <option name="METHOD_NAME" value="whenSetModeCalledWithOn_thenJsonObjectWithCorrectModeReturned" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="HeatServiceTest.whenSetModeCalledWithOn_thenModeIsCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="rxFlareHopper_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HeatServiceTest" />
+      <option name="METHOD_NAME" value="whenSetModeCalledWithOn_thenModeIsCorrect" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -828,46 +843,6 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ModManagerTest" />
       <option name="METHOD_NAME" value="givenModManagerCreatedWithSwitchable_whenGetModListCalled_thenResultingObservableHas3Emmissions" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="ModManagerTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="rxFlareHopper_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ModManagerTest" />
-      <option name="METHOD_NAME" value="test2" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="TimerEventTest.whenGetRxIntervalCalled_returnsIntervalObservableOfBooleanValues" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="rxFlareHopper_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="timerTest" />
-      <option name="MAIN_CLASS_NAME" value="timerTest.TimerEventTest" />
-      <option name="METHOD_NAME" value="whenGetRxIntervalCalled_returnsIntervalObservableOfBooleanValues" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -928,19 +903,19 @@
       <listeners />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.All in rxFlareHopper_test" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.TimerEventTest.whenGetRxIntervalCalled_returnsIntervalObservableOfBooleanValues" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ModManagerTest.givenModManagerCreatedWithSwitchable_thenOffOnSwitchableIsCalled" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ModManagerTest.test2" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ModManagerTest.givenModManagerCreatedWithSwitchable_whenGetModListCalled_thenResultingObservableHas3Emmissions" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.ModManagerTest.givenModManagerCreatedWithSwitchable_thenOffOnSwitchableIsCalled" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ModManagerTest.givenModManagerCreatedWithSwitchable_whenGetModListCalled_thenResultingObservableHas3Emmissions" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.HeatServiceTest.whenSetModeCalledWithOn_thenModeIsCorrect" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.HeatServiceTest.whenSetModeCalledWithInvalidMode_thenModeIsUnchanged" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.HeatServiceTest.whenSetModeCalledWithOn_thenJsonObjectWithCorrectModeReturned" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ModManagerTest.givenModManagerCreatedWithSwitchable_thenOffOnSwitchableIsCalled" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ModManagerTest.givenModManagerCreatedWithSwitchable_whenGetModListCalled_thenResultingObservableHas3Emmissions" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.ModManagerTest.test2" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.All in rxFlareHopper_test" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.TimerEventTest.whenGetRxIntervalCalled_returnsIntervalObservableOfBooleanValues" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.HeatServiceTest.whenSetModeCalledWithOn_thenJsonObjectWithCorrectModeReturned" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.HeatServiceTest.whenSetModeCalledWithInvalidMode_thenModeIsUnchanged" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.HeatServiceTest.whenSetModeCalledWithOn_thenModeIsCorrect" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.ModManagerTest.givenModManagerCreatedWithSwitchable_thenOffOnSwitchableIsCalled" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ModManagerTest.givenModManagerCreatedWithSwitchable_whenGetModListCalled_thenResultingObservableHas3Emmissions" />
       </list>
     </recent_temporary>
   </component>
@@ -969,32 +944,32 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ModManagerTest_givenModManagerCreatedWithSwitchable_thenOffOnSwitchableIsCalled - 2018.12.13 at 12h 42m 59s.xml">
-      <configuration name="ModManagerTest.givenModManagerCreatedWithSwitchable_thenOffOnSwitchableIsCalled" configurationId="JUnit" />
+    <history-entry file="HeatServiceTest_whenSetModeCalledWithInvalidMode_thenModeIsUnchanged - 2018.12.16 at 13h 00m 49s.xml">
+      <configuration name="HeatServiceTest.whenSetModeCalledWithInvalidMode_thenModeIsUnchanged" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ModManagerTest_givenModManagerCreatedWithSwitchable_thenOffOnSwitchableIsCalled - 2018.12.13 at 12h 43m 52s.xml">
-      <configuration name="ModManagerTest.givenModManagerCreatedWithSwitchable_thenOffOnSwitchableIsCalled" configurationId="JUnit" />
+    <history-entry file="HeatServiceTest_whenSetModeCalledWithInvalidMode_thenModeIsUnchanged - 2018.12.16 at 13h 06m 45s.xml">
+      <configuration name="HeatServiceTest.whenSetModeCalledWithInvalidMode_thenModeIsUnchanged" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ModManagerTest_givenModManagerCreatedWithSwitchable_thenOffOnSwitchableIsCalled - 2018.12.13 at 12h 45m 10s.xml">
-      <configuration name="ModManagerTest.givenModManagerCreatedWithSwitchable_thenOffOnSwitchableIsCalled" configurationId="JUnit" />
+    <history-entry file="HeatServiceTest_whenSetModeCalledWithInvalidMode_thenModeIsUnchanged - 2018.12.16 at 13h 06m 57s.xml">
+      <configuration name="HeatServiceTest.whenSetModeCalledWithInvalidMode_thenModeIsUnchanged" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ModManagerTest_givenModManagerCreatedWithSwitchable_thenOffOnSwitchableIsCalled - 2018.12.13 at 12h 45m 30s.xml">
-      <configuration name="ModManagerTest.givenModManagerCreatedWithSwitchable_thenOffOnSwitchableIsCalled" configurationId="JUnit" />
+    <history-entry file="HeatServiceTest_whenSetModeCalledWithOn_thenJsonObjectWithCorrectModeReturned - 2018.12.16 at 13h 15m 32s.xml">
+      <configuration name="HeatServiceTest.whenSetModeCalledWithOn_thenJsonObjectWithCorrectModeReturned" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ModManagerTest_givenModManagerCreatedWithSwitchable_thenOffOnSwitchableIsCalled - 2018.12.13 at 12h 47m 54s.xml">
-      <configuration name="ModManagerTest.givenModManagerCreatedWithSwitchable_thenOffOnSwitchableIsCalled" configurationId="JUnit" />
+    <history-entry file="HeatServiceTest_whenSetModeCalledWithOn_thenJsonObjectWithCorrectModeReturned - 2018.12.16 at 13h 19m 08s.xml">
+      <configuration name="HeatServiceTest.whenSetModeCalledWithOn_thenJsonObjectWithCorrectModeReturned" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ModManagerTest_givenModManagerCreatedWithSwitchable_thenOffOnSwitchableIsCalled - 2018.12.13 at 12h 48m 55s.xml">
-      <configuration name="ModManagerTest.givenModManagerCreatedWithSwitchable_thenOffOnSwitchableIsCalled" configurationId="JUnit" />
+    <history-entry file="HeatServiceTest_whenSetModeCalledWithOn_thenModeIsCorrect - 2018.12.16 at 12h 51m 09s.xml">
+      <configuration name="HeatServiceTest.whenSetModeCalledWithOn_thenModeIsCorrect" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ModManagerTest_givenModManagerCreatedWithSwitchable_thenOffOnSwitchableIsCalled - 2018.12.13 at 12h 50m 57s.xml">
-      <configuration name="ModManagerTest.givenModManagerCreatedWithSwitchable_thenOffOnSwitchableIsCalled" configurationId="JUnit" />
+    <history-entry file="HeatServiceTest_whenSetModeCalledWithOn_thenModeIsCorrect - 2018.12.16 at 12h 53m 44s.xml">
+      <configuration name="HeatServiceTest.whenSetModeCalledWithOn_thenModeIsCorrect" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ModManagerTest_givenModManagerCreatedWithSwitchable_thenOffOnSwitchableIsCalled - 2018.12.13 at 12h 51m 01s.xml">
-      <configuration name="ModManagerTest.givenModManagerCreatedWithSwitchable_thenOffOnSwitchableIsCalled" configurationId="JUnit" />
+    <history-entry file="HeatServiceTest_whenSetModeCalledWithOn_thenModeIsCorrect - 2018.12.16 at 12h 57m 09s.xml">
+      <configuration name="HeatServiceTest.whenSetModeCalledWithOn_thenModeIsCorrect" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ModManagerTest_givenModManagerCreatedWithSwitchable_whenGetModListCalled_thenResultingObservableHas3Emmissions - 2018.12.13 at 12h 46m 05s.xml">
-      <configuration name="ModManagerTest.givenModManagerCreatedWithSwitchable_whenGetModListCalled_thenResultingObservableHas3Emmissions" configurationId="JUnit" />
+    <history-entry file="HeatServiceTest_whenSetModeCalledWithOn_thenModeIsCorrect - 2018.12.16 at 12h 59m 43s.xml">
+      <configuration name="HeatServiceTest.whenSetModeCalledWithOn_thenModeIsCorrect" configurationId="JUnit" />
     </history-entry>
     <history-entry file="ModManagerTest_givenModManagerCreatedWithSwitchable_whenGetModListCalled_thenResultingObservableHas3Emmissions - 2018.12.13 at 12h 46m 18s.xml">
       <configuration name="ModManagerTest.givenModManagerCreatedWithSwitchable_whenGetModListCalled_thenResultingObservableHas3Emmissions" configurationId="JUnit" />
@@ -1004,31 +979,30 @@
     <option name="totallyTimeSpent" value="43698000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="286" y="35" width="1440" height="1044" extended-state="0" />
+    <frame x="213" y="13" width="1440" height="1044" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921812" sideWeight="0.483023" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32819384" sideWeight="0.483023" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.335177" sideWeight="0.4712451" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.438326" sideWeight="0.55864197" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4393241" sideWeight="0.55864197" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24559471" sideWeight="0.5287549" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24559471" sideWeight="0.5287549" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18405797" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32784638" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18695652" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14565217" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39784947" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="sbt" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1036,6 +1010,7 @@
       <window_info id="Database Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="11" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32784638" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298193" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
@@ -1058,17 +1033,11 @@
           <properties />
           <option name="timeStamp" value="28" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ModManagerTest.java</url>
-          <line>38</line>
-          <properties />
-          <option name="timeStamp" value="34" />
-        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="38" />
+      <option name="time" value="40" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1122,9 +1091,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.1.9/890fc9ef77d78ac270f322b024c0e660a8f57ea0/rxjava-2.1.9-sources.jar!/io/reactivex/observers/BaseTestConsumer.java" />
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.1.9/890fc9ef77d78ac270f322b024c0e660a8f57ea0/rxjava-2.1.9-sources.jar!/io/reactivex/Single.java" />
-    <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/java.base/java/time/temporal/TemporalUnit.java" />
     <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/java.base/java/time/temporal/ChronoUnit.java" />
     <entry file="file://$PROJECT_DIR$/src/test/groovy/TimerModuleTest" />
     <entry file="file://$PROJECT_DIR$/src/test/groovy/TimerModuleTestG.groovy" />
@@ -1137,13 +1103,6 @@
       </provider>
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/util/List.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="18" lean-forward="false" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/lang/Boolean.java" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
@@ -1178,13 +1137,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/modules/ReceivesHeatingInstruction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="10" column="38" lean-forward="true" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/modules/ReceivesHeatingInstruction.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/modules/SwitchEvent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -1196,14 +1149,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="7" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/timerTest/TimerModuleTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1267,11 +1212,9 @@
         <state relative-caret-position="225">
           <caret line="15" column="56" lean-forward="false" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#248#249#0" expanded="true" />
-            <element signature="e#279#280#0" expanded="true" />
-            <element signature="e#349#350#0" expanded="true" />
-            <element signature="e#374#375#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#248#249#0" expanded="false" />
+            <element signature="e#349#350#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1325,7 +1268,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
           <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1333,11 +1275,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="122">
           <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-          <folding>
-            <element signature="e#2008#2009#0" expanded="false" />
-            <element signature="e#2876#2877#0" expanded="false" />
-            <element signature="e#2924#2925#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1345,10 +1282,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="122">
           <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding>
-            <element signature="e#1181#1182#0" expanded="false" />
-            <element signature="e#1250#1251#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1356,36 +1289,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="437" column="0" lean-forward="false" selection-start-line="437" selection-start-column="0" selection-end-line="437" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/modules/TestSwitchable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ModManagerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="36" column="28" lean-forward="false" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/modules/ModManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="61" column="27" lean-forward="true" selection-start-line="61" selection-start-column="27" selection-end-line="61" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/modules/ModManager.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/modules/timer/TimerEvent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -1397,7 +1304,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/modules/timer/TimerModule.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="17" column="41" lean-forward="true" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+          <caret line="17" column="41" lean-forward="false" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
           <folding>
             <element signature="e#822#823#0" expanded="true" />
             <element signature="e#878#879#0" expanded="true" />
@@ -1405,23 +1312,86 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/HeatService.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.vertx/vertx-core/3.5.4/7aebf47c0b9f35b297276eb006b91151a2f756e5/vertx-core-3.5.4-sources.jar!/io/vertx/core/json/JsonObject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        <state relative-caret-position="310">
+          <caret line="52" column="9" lean-forward="false" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
+          <folding>
+            <element signature="e#1686#1687#0" expanded="false" />
+            <element signature="e#1723#1724#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="9" lean-forward="false" selection-start-line="3" selection-start-column="9" selection-end-line="6" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ModManagerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="20" column="4" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/timerTest/TimerModuleTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="33" column="5" lean-forward="false" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/modules/TestSwitchable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/WebController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="28" column="31" lean-forward="true" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+          <folding>
+            <element signature="e#658#659#0" expanded="true" />
+            <element signature="e#704#705#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="111" column="71" lean-forward="false" selection-start-line="111" selection-start-column="71" selection-end-line="111" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/HeatServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="43" column="38" lean-forward="false" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/WebController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/HeatService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+        <state relative-caret-position="267">
+          <caret line="29" column="66" lean-forward="true" selection-start-line="29" selection-start-column="66" selection-end-line="29" selection-end-column="66" />
           <folding>
-            <element signature="e#658#659#0" expanded="true" />
-            <element signature="e#704#705#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#944#945#0" expanded="true" />
+            <element signature="e#971#972#0" expanded="true" />
           </folding>
         </state>
       </provider>
