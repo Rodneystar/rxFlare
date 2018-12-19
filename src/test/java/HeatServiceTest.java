@@ -7,6 +7,11 @@ import modules.timer.TimerModule;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.time.Duration;
+import java.time.LocalTime;
+import java.time.temporal.ChronoUnit;
+import java.util.concurrent.TimeUnit;
+
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class HeatServiceTest {
@@ -36,14 +41,35 @@ public class HeatServiceTest {
     }
 
     @Test
+    public void whenSetModeToTimer_thenDisposableAddedToComposite() {
+        JsonObject modeReq = new JsonObject("{\"mode\": \"HEATING_TIMER\"}");
+        service.setMode(modeReq);
+        timer.addTimer(LocalTime.now().plus(30, ChronoUnit.MINUTES), Duration.of(30, ChronoUnit.MINUTES));
+
+        sched.advanceTimeBy(35, TimeUnit.MINUTES);
+
+        assertThat(switchable.onWasCalled()).isTrue();
+
+        sched.advanceTimeBy(30, TimeUnit.MINUTES);
+        assertThat(switchable.offWasCalled()).isTrue();
+    }
+
+    @Test
     public void whenSetModeCalledWithOn_thenJsonObjectWithCorrectModeReturned() {
         JsonObject modeReq = new JsonObject("{\"mode\": \"ON\"}");
 
         service.setMode(modeReq)
                 .test()
                 .assertValue( json -> json.getString("newMode").equals("ON"));
+    }
 
-//        assertThat( service.getMode() ).isEqualByComparingTo(TargetModule.ON);
+    @Test
+    public void whenSetModeCalledWithTimer_thenJsonObjectWithCorrectModeReturned() {
+        JsonObject modeReq = new JsonObject("{\"mode\": \"HEATING_TIMER\"}");
+
+        service.setMode(modeReq)
+                .test()
+                .assertValue( json -> json.getString("newMode").equals("HEATING_TIMER"));
     }
 
     @Test
