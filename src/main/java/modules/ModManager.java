@@ -14,6 +14,7 @@ import io.vertx.core.json.JsonObject;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
+import java.util.logging.Logger;
 
 public class ModManager {
 
@@ -55,6 +56,8 @@ public class ModManager {
                 .filter( s -> s.getSource().equals(activeModule))
                 .subscribeOn(sched)
                 .subscribe( e -> {
+
+                    System.out.println("in modManSubHandler ------ " + e.getSource().name());
                     if(e.getShouldBeOn()) {
                         switchable.on();
                     } else {
