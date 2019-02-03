@@ -3,17 +3,17 @@ package modules;
 public class SwitchEvent {
 
     TargetModule source;
-    Boolean shouldBeOn;
+    Boolean desiresTargetOn;
 
-    public Boolean getShouldBeOn() {
-        return shouldBeOn;
+    public Boolean desiresOn() {
+        return desiresTargetOn;
     }
 
     public TargetModule getSource() {
         return source;
     }
 
-    public SwitchEvent(TargetModule source, boolean shouldBeOn) {
-        this.source = source; this.shouldBeOn = shouldBeOn;
+    public SwitchEvent(TargetModule source, boolean desiresTargetOn) {
+        this.source = source; this.desiresTargetOn = desiresTargetOn;
     }
 }

@@ -2,6 +2,7 @@ package timerTest;
 
 import io.reactivex.observers.TestObserver;
 import io.reactivex.schedulers.TestScheduler;
+import modules.SwitchEvent;
 import modules.timer.TimerEvent;
 import org.assertj.core.data.Offset;
 import org.junit.Test;
@@ -23,7 +24,7 @@ public class TimerEventTest {
                 LocalTime.now().plus(1, ChronoUnit.HOURS),
                 Duration.of(1, ChronoUnit.HOURS),
                 sched);
-        TestObserver test = event1.getRxInterval().map(e -> e.getShouldBeOn())
+        TestObserver<Boolean> test = event1.getRxInterval().map( SwitchEvent::desiresOn)
                 .test();
         test.assertNoValues();
 

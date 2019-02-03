@@ -29,7 +29,7 @@ public class TimerEventListTest {
         list.addEvent(new TimerEvent(LocalTime.now().plus(5, ChronoUnit.MINUTES), Duration.ofMinutes(5), sched));
         list.addEvent(new TimerEvent(LocalTime.now().plus(15, ChronoUnit.MINUTES), Duration.ofMinutes(5), sched));
 
-        TestObserver<Boolean> test = list.getRxIntervalForAllEvents().map( e-> e.getShouldBeOn())
+        TestObserver<Boolean> test = list.getRxIntervalForAllEvents().map( e-> e.desiresOn())
                 .test();
 
         test.assertNoValues();

@@ -27,6 +27,7 @@ public class TimerModule {
     }
 
     public Observable<SwitchEvent> observe() {
+        updateBroadcastedEvents();
         return broadcastedEvents.flatMap(e -> e);
     }
 

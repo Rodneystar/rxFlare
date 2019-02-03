@@ -7,9 +7,11 @@ import modules.timer.TimerModule;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.sql.Time;
 import java.time.Duration;
 import java.time.LocalTime;
 import java.time.temporal.ChronoUnit;
+import java.time.temporal.TemporalUnit;
 import java.util.concurrent.TimeUnit;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -31,6 +33,60 @@ public class HeatServiceTest {
 
         service = new HeatService(timer, switchable);
     }
+
+    @Test
+    public void modeChangedFromTimedToOff_timeElapses_switchableStaysOff() {
+        service = new HeatService(timer, switchable);
+        service.setMode(new JsonObject("{\"mode\": \"HEATING_TIMER\"}"));
+        service.setMode(new JsonObject("{\"mode\": \"OFF\"}"));
+
+        timer.addTimer(LocalTime.now().plus(2, ChronoUnit.MINUTES), Duration.ofMinutes(5));
+
+        sched.advanceTimeBy(4, TimeUnit.MINUTES);
+
+        assertThat( switchable.onWasCalled() ).isFalse();
+    }
+
+    @Test
+    public void modeChangedFromTimedToOn_timeElapses_switchableStaysOn() {
+        service = new HeatService(timer, switchable);
+        service.setMode(new JsonObject("{\"mode\": \"HEATING_TIMER\"}"));
+        service.setMode(new JsonObject("{\"mode\": \"ON\"}"));
+        switchable.reset();
+        timer.addTimer(LocalTime.now().plus(2, ChronoUnit.MINUTES), Duration.ofMinutes(5));
+
+        sched.advanceTimeBy(22, TimeUnit.MINUTES);
+
+        assertThat( switchable.offWasCalled() ).isFalse();
+    }
+
+    @Test
+    public void testingTest() {
+
+        timer.addTimer(LocalTime.now().plus(10, ChronoUnit.MINUTES), Duration.ofMinutes(10));
+        timer.addTimer(LocalTime.now().plus(50, ChronoUnit.MINUTES), Duration.ofMinutes(10));
+
+        timer.observe().subscribe( e -> System.out.println("event: " + e.desiresOn()));
+        sched.advanceTimeBy(1, TimeUnit.DAYS);
+
+    }
+    @Test
+    public void modeChangedFromTimedToOnAndBackToTimed_timeElapses_switchableStaysOn() {
+        service = new HeatService(timer, switchable);
+        service.setMode(new JsonObject("{\"mode\": \"HEATING_TIMER\"}"));
+        service.setMode(new JsonObject("{\"mode\": \"ON\"}"));
+        switchable.reset();
+        timer.addTimer(LocalTime.now().plus(10, ChronoUnit.MINUTES), Duration.ofMinutes(10));
+        service.setMode(new JsonObject("{\"mode\": \"HEATING_TIMER\"}"));
+
+
+        sched.advanceTimeBy(2, TimeUnit.DAYS);
+
+        assertThat( switchable.timesOnCalled()).isEqualTo(2);
+        assertThat( switchable.timesOffCalled()).isEqualTo(2);
+    }
+
+
     @Test
     public void whenSetModeCalledWithOn_thenModeIsCorrect() {
         JsonObject modeReq = new JsonObject("{\"mode\": \"ON\"}");

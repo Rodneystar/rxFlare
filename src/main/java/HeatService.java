@@ -1,17 +1,11 @@
-import com.sun.media.jfxmediaimpl.MediaDisposer;
-import io.reactivex.Observable;
 import io.reactivex.Single;
-import io.reactivex.SingleSource;
 import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.internal.disposables.DisposableHelper;
-import io.reactivex.observers.DisposableObserver;
 import io.vertx.core.json.JsonObject;
 import modules.Switchable;
 import modules.TargetModule;
 import modules.timer.TimerModule;
-
-import java.lang.annotation.Target;
 
 public class HeatService {
 
@@ -25,6 +19,7 @@ public class HeatService {
         this.switchable = switchable;
         this.mode = TargetModule.OFF;
         this.switchableSubscription = new CompositeDisposable();
+
     }
 
 
@@ -34,9 +29,11 @@ public class HeatService {
         switch (mode) {
             case OFF:
                 switchable.off();
+                switchableSubscription.clear();
                 break;
             case ON:
                 switchable.on();
+                switchableSubscription.clear();
                 break;
             case HEATING_TIMER:
                 subscribeSwitchableToTimer();
@@ -50,8 +47,8 @@ public class HeatService {
         switchableSubscription.clear();
         switchableSubscription.add(
                 timer.observe().subscribe( e -> {
-                    if(e.getShouldBeOn()) switchable.on();
-                    else if(!e.getShouldBeOn()) switchable.off();
+                    if(e.desiresOn()) switchable.on();
+                    else if(!e.desiresOn()) switchable.off();
                 })
         );
     }

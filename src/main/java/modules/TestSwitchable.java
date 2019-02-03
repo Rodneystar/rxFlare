@@ -4,6 +4,13 @@ import modules.Switchable;
 
 public class TestSwitchable implements Switchable {
 
+    public Integer timesOnCalled() {
+        return onCounter;
+    }
+    public Integer timesOffCalled() {
+        return offCounter;
+    }
+
     private Integer onCounter = 0;
     private Integer offCounter = 0;
 

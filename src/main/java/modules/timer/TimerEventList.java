@@ -12,7 +12,7 @@ public class TimerEventList {
     private Observable<TimerEvent> observable;
 
     public TimerEventList() {
-        eventList = new ArrayList();
+        eventList = new ArrayList<>();
         observable = Observable.fromIterable(eventList);
     }
 

@@ -13,7 +13,6 @@ import org.junit.Test;
 import java.time.Duration;
 import java.time.LocalTime;
 import java.time.temporal.ChronoUnit;
-import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -40,14 +39,14 @@ public class TimerModuleTest {
 
     @Test
     public void whenObserveCalled_returnsIntervalObservableOfSwitchEvents() throws InterruptedException {
-        TestObserver<Boolean> test = timer.observe().map(e -> e.getShouldBeOn()).test();
+        TestObserver<Boolean> test = timer.observe().map(e -> e.desiresOn()).test();
 
         test.assertNoValues();
     }
 
     @Test
     public void whenObserveCalled_returnsIntervalObservableOfSwitchEventsMANUALTEST() throws InterruptedException {
-        TestObserver<Boolean> test = timer.observe().map(e -> e.getShouldBeOn()).test();
+        TestObserver<Boolean> test = timer.observe().map(e -> e.desiresOn()).test();
         timer.addTimer(new TimerEvent(LocalTime.now().plus(3, ChronoUnit.MINUTES),
                 Duration.ofMinutes(2), sched));
 
