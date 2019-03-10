@@ -1,13 +1,14 @@
 package modules.timer;
 
 import io.reactivex.*;
+import io.reactivex.disposables.Disposable;
+import io.reactivex.functions.Consumer;
+import io.reactivex.subjects.BehaviorSubject;
 import io.reactivex.subjects.PublishSubject;
-import io.vertx.core.json.JsonObject;
 import modules.SwitchEvent;
 
 import java.time.Duration;
 import java.time.LocalTime;
-import java.util.concurrent.TimeUnit;
 
 public class TimerModule {
 
@@ -26,10 +27,17 @@ public class TimerModule {
                 timerEvents.getRxIntervalForAllEvents().takeUntil(broadcastedEvents));
     }
 
+    public Disposable subscribe(Consumer<SwitchEvent> consumer) {
+        Disposable disposable = broadcastedEvents.flatMap(e -> e).subscribe(consumer);
+        updateBroadcastedEvents();
+        return disposable;
+    }
+
     public Observable<SwitchEvent> observe() {
         updateBroadcastedEvents();
         return broadcastedEvents.flatMap(e -> e);
     }
+
 
     public void addTimer(TimerEvent event) {
         timerEvents.addEvent(event);

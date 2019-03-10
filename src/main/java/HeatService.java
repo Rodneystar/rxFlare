@@ -1,3 +1,4 @@
+import com.fasterxml.jackson.core.JsonParseException;
 import io.reactivex.Single;
 import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.disposables.Disposable;
@@ -5,7 +6,11 @@ import io.reactivex.internal.disposables.DisposableHelper;
 import io.vertx.core.json.JsonObject;
 import modules.Switchable;
 import modules.TargetModule;
+import modules.timer.TimerEvent;
 import modules.timer.TimerModule;
+
+import java.time.Duration;
+import java.time.LocalTime;
 
 public class HeatService {
 
@@ -20,6 +25,18 @@ public class HeatService {
         this.mode = TargetModule.OFF;
         this.switchableSubscription = new CompositeDisposable();
 
+    }
+
+    public Single<JsonObject> addTimer(JsonObject bodyAsJson) {
+        try {
+            LocalTime start = LocalTime.parse(bodyAsJson.getString("start"));
+            Duration duration = Duration.ofMinutes(bodyAsJson.getInteger("duration"));
+            TimerEvent event = new TimerEvent(start, duration);
+            timer.addTimer(event);
+        } catch(Exception e) {
+            return Single.error(e);
+        }
+        return Single.just(new JsonObject("{\"created\": \"success\"}"));
     }
 
 
@@ -46,9 +63,9 @@ public class HeatService {
     private void subscribeSwitchableToTimer() {
         switchableSubscription.clear();
         switchableSubscription.add(
-                timer.observe().subscribe( e -> {
-                    if(e.desiresOn()) switchable.on();
-                    else if(!e.desiresOn()) switchable.off();
+                timer.subscribe(e -> {
+                    if (e.desiresOn()) switchable.on();
+                    else if (!e.desiresOn()) switchable.off();
                 })
         );
     }

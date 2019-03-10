@@ -1,8 +1,12 @@
+import com.fasterxml.jackson.core.JsonParseException;
+import io.reactivex.Single;
+import io.reactivex.observers.TestObserver;
 import io.reactivex.schedulers.TestScheduler;
 import io.vertx.core.json.JsonObject;
 import modules.Switchable;
 import modules.TargetModule;
 import modules.TestSwitchable;
+import modules.timer.TimerEvent;
 import modules.timer.TimerModule;
 import org.junit.Before;
 import org.junit.Test;
@@ -35,8 +39,25 @@ public class HeatServiceTest {
     }
 
     @Test
+    public void addTimer_badJson_observableError() {
+        Single<JsonObject> result = service.addTimer(new JsonObject("{\"start\": \"13:30\", \"duion\": 60 }"));
+        result.test().assertError(Exception.class );
+
+    }
+
+    @Test
+    public void addTimer_startAndDuration_timerIsAdded() {
+        Single<JsonObject> result = service.addTimer(new JsonObject("{\"start\": \"13:30\", \"duration\": 60 }"));
+        result.test().assertValue(json -> json.containsKey("created"));
+        timer.getEvents()
+                .test()
+                .assertSubscribed()
+                .assertValue( v -> v.getDuration().toMinutes() == 60);
+    }
+
+    @Test
     public void modeChangedFromTimedToOff_timeElapses_switchableStaysOff() {
-        service = new HeatService(timer, switchable);
+//        service = new HeatService(timer, switchable);
         service.setMode(new JsonObject("{\"mode\": \"HEATING_TIMER\"}"));
         service.setMode(new JsonObject("{\"mode\": \"OFF\"}"));
 
@@ -72,7 +93,7 @@ public class HeatServiceTest {
     }
     @Test
     public void modeChangedFromTimedToOnAndBackToTimed_timeElapses_switchableStaysOn() {
-        service = new HeatService(timer, switchable);
+//        service = new HeatService(timer, switchable);
         service.setMode(new JsonObject("{\"mode\": \"HEATING_TIMER\"}"));
         service.setMode(new JsonObject("{\"mode\": \"ON\"}"));
         switchable.reset();

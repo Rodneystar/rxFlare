@@ -1,3 +1,4 @@
+import io.netty.handler.codec.http.HttpResponseStatus;
 import io.reactivex.Single;
 import io.reactivex.schedulers.Schedulers;
 import io.vertx.core.http.HttpMethod;
@@ -25,21 +26,38 @@ public class WebController {
     public void start() {
 
         router.route().handler(BodyHandler.create());
-        router
-                .route("/mode")
+
+        router.route("/mode")
                 .method(HttpMethod.PUT)
                 .handler(context ->
                         Single
                                 .just(context)
                                 .doOnEvent((c, err) -> logger.info(format("{0}", context.getBodyAsJson())))
                                 .flatMap(cText ->
-                                    heatService.setMode(cText.getBodyAsJson()))
+                                        heatService.setMode(cText.getBodyAsJson()))
                                 .subscribe(
-                                        r -> context.response().end( r.encodePrettily() ),
-                                        e -> context.response().end( e.getMessage() )
+                                        r -> context.response().end(r.encodePrettily()),
+                                        e -> context.response().end(e.getMessage())
 
                                 )
                 );
+
+        router.route("/add")
+                .method(HttpMethod.POST)
+                .handler(context ->
+                        Single.just(context)
+                                .doOnEvent((c, err) -> logger.info(format("{0}", context.getBodyAsJson())))
+                                .flatMap( cText ->
+                                        heatService.addTimer(cText.getBodyAsJson()))
+                                .subscribe(
+                                        r -> {
+                                            context.response().setStatusCode(HttpResponseStatus.CREATED.code());
+                                            context.response().end(r.encodePrettily());
+                                        },
+                                        e -> context.response().end(e.getMessage())
+                                )
+                );
+
 
         vertx
                 .createHttpServer()
