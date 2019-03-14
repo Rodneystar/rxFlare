@@ -5,8 +5,11 @@ import io.reactivex.observers.TestObserver;
 import io.reactivex.schedulers.TestScheduler;
 import modules.timer.TimerEvent;
 import modules.timer.TimerEventList;
+import modules.timer.TimerOverLappingException;
 import org.junit.Before;
+import org.junit.Rule;
 import org.junit.Test;
+import org.junit.rules.ExpectedException;
 
 import java.time.Duration;
 import java.time.LocalTime;
@@ -17,6 +20,9 @@ public class TimerEventListTest {
 
     TimerEventList list;
     TestScheduler sched;
+
+    @Rule
+    public ExpectedException thrown = ExpectedException.none();
 
     @Before
     public void setUp() throws Exception {
@@ -48,9 +54,20 @@ public class TimerEventListTest {
     }
 
     @Test
+    public void overlappingEvents_secondEvent_throwTimerOverlappingException() {
+        thrown.expect(TimerOverLappingException.class);
+
+        list.addEvent(new TimerEvent(LocalTime.of(12,0), Duration.ofHours(2)));
+        list.addEvent(new TimerEvent(LocalTime.of(13,56), Duration.ofHours(2)));
+
+
+    }
+
+    @Test
     public void givenEmptyTimerList_when2OverlappingEventsAreAdded_thenGetEventsReturnsObservableWithOneValue() {
         Observable<TimerEvent> underTest = list.getAllEvents();
 
+        thrown.expect(TimerOverLappingException.class);
         underTest.test().assertNoValues();
 
         list.addEvent(new TimerEvent(LocalTime.of(12,0), Duration.ofHours(2)));

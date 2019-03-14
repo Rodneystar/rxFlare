@@ -1,8 +1,10 @@
 import com.fasterxml.jackson.core.JsonParseException;
+import io.reactivex.Observable;
 import io.reactivex.Single;
 import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.internal.disposables.DisposableHelper;
+import io.vertx.core.json.JsonArray;
 import io.vertx.core.json.JsonObject;
 import modules.Switchable;
 import modules.TargetModule;
@@ -11,6 +13,8 @@ import modules.timer.TimerModule;
 
 import java.time.Duration;
 import java.time.LocalTime;
+import java.util.List;
+import java.util.Timer;
 
 public class HeatService {
 
@@ -26,6 +30,15 @@ public class HeatService {
         this.switchableSubscription = new CompositeDisposable();
 
     }
+
+    public Observable<TimerEvent> getTimerList() {
+        return timer.getEvents();
+    }
+
+    public JsonArray timersToJson(Observable<TimerEvent> events) {
+        return new JsonArray(events.toList().blockingGet());
+    }
+
 
     public Single<JsonObject> addTimer(JsonObject bodyAsJson) {
         try {
@@ -72,5 +85,14 @@ public class HeatService {
 
     public TargetModule getMode() {
         return mode;
+    }
+
+    public Single<JsonObject> removeTimer(JsonObject requestBody) {
+        try {
+            timer.removeTimer(requestBody.getInteger("index"));
+        } catch(Exception e) {
+            return Single.error(e);
+        }
+        return Single.just(new JsonObject("\"deleted\": \"true\""));
     }
 }

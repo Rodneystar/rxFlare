@@ -17,8 +17,14 @@ public class TimerEventList {
     }
 
     public void addEvent(TimerEvent timerEvent) {
-        if (!isOverlappingAny(timerEvent)) eventList.add(timerEvent);
+        if (!isOverlappingAny(timerEvent)) {
+            eventList.add(timerEvent);
+        } else {
+            throw new TimerOverLappingException("timer was overlapping");
+        }
     }
+
+    public void removeEvent(int index) { eventList.remove(index); }
 
     public Observable<SwitchEvent> getRxIntervalForAllEvents() {
         return this.getAllEvents()

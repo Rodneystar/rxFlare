@@ -3,6 +3,7 @@ package modules.timer;
 import io.reactivex.*;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.functions.Consumer;
+import io.reactivex.schedulers.Schedulers;
 import io.reactivex.subjects.BehaviorSubject;
 import io.reactivex.subjects.PublishSubject;
 import modules.SwitchEvent;
@@ -22,6 +23,10 @@ public class TimerModule {
         broadcastedEvents = PublishSubject.create();
     }
 
+    public TimerModule() {
+        this(Schedulers.computation());
+    }
+
     private void updateBroadcastedEvents() {
         broadcastedEvents.onNext(
                 timerEvents.getRxIntervalForAllEvents().takeUntil(broadcastedEvents));
@@ -38,6 +43,11 @@ public class TimerModule {
         return broadcastedEvents.flatMap(e -> e);
     }
 
+
+    public void removeTimer(int index) {
+        timerEvents.removeEvent(index);
+        updateBroadcastedEvents();
+    }
 
     public void addTimer(TimerEvent event) {
         timerEvents.addEvent(event);
