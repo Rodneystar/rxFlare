@@ -43,6 +43,7 @@ public class HeatServiceTest {
     }
 
 
+
     @Test
     public void getTimerList_oneTimerAdded_returnsObservableofOne() {
         timer.addTimer(LocalTime.parse("21:30"), Duration.of(1, ChronoUnit.HOURS));
@@ -52,6 +53,20 @@ public class HeatServiceTest {
                 .assertValueAt(0, event ->
                         event.getDuration().toHours() == 1);
     }
+
+
+    @Test
+    public void setRunDown_called_timerSubscriptionturnsOnAndOff() {
+        timer.addTimer(LocalTime.parse("21:30"), Duration.of(1, ChronoUnit.HOURS));
+        service.setRunDown(new JsonObject("{\"duration\": 50 }" ));
+
+        assertThat(switchable.onWasCalled());
+        assertThat(!switchable.offWasCalled());
+
+        sched.advanceTimeBy(60, TimeUnit.MINUTES);
+        assertThat(switchable.offWasCalled());
+    }
+
 
     @Test
     public void timersToJson_listOfOne_returnsJsonObject() {

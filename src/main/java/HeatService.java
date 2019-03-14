@@ -15,6 +15,7 @@ import java.time.Duration;
 import java.time.LocalTime;
 import java.util.List;
 import java.util.Timer;
+import java.util.concurrent.TimeUnit;
 
 public class HeatService {
 
@@ -52,10 +53,25 @@ public class HeatService {
         return Single.just(new JsonObject("{\"created\": \"success\"}"));
     }
 
+    public Single<JsonObject> setRunDown(JsonObject runDownRequest) {
+        switchableSubscription.clear();
+        switchable.on();
+        switchableSubscription.add(
+                Observable.interval(runDownRequest.getInteger("duration"), TimeUnit.MINUTES)
+                    .take(1)
+                    .subscribe( x -> switchMode())
+        );
+        return Single.just(runDownRequest);
+    }
+
 
     public Single<JsonObject> setMode(JsonObject bodyAsJson) {
         mode = TargetModule.valueOf(bodyAsJson.getString("mode"));
+        switchMode();
+        return Single.just(new JsonObject().put("newMode", mode));
+    }
 
+    private void switchMode() {
         switch (mode) {
             case OFF:
                 switchable.off();
@@ -70,7 +86,6 @@ public class HeatService {
                 break;
 
         }
-        return Single.just(new JsonObject().put("newMode", mode));
     }
 
     private void subscribeSwitchableToTimer() {
